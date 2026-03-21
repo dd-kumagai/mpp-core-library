@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  /* ═══════════════════════════════════════════
+     Primitive Palette
+     ═══════════════════════════════════════════ */
+
+  /* ─── Blue ─── */
+  --color-blue-15: #002749;
+  --color-blue-35: #0051a4;
+  --color-blue-45: #0066dd;
+  --color-blue-55: #0a85eb;
+  --color-blue-60: #2c93f9;
+  --color-blue-65: #4fa1f9;
+  --color-blue-95: #eaf1ff;
+
+  /* ─── Blue 15 Alpha ─── */
+  --color-blue15alpha-10: rgba(0, 39, 73, 0.1);
+  --color-blue15alpha-20: rgba(0, 39, 73, 0.2);
+
+  /* ─── Red ─── */
+  --color-red-45: #d3103a;
+  --color-red-55: #ff3a3a;
+  --color-red-60: #f75a67;
+  --color-red-95: #ffedec;
+
+  /* ─── Green ─── */
+  --color-green-45: #247a3a;
+  --color-green-95: #dbf8e3;
+
+  /* ─── Yellow ─── */
+  --color-yellow-45: #866600;
+  --color-yellow-85: #f9d14b;
+  --color-yellow-95: #f9f1cf;
+
+  /* ─── Orange ─── */
+  --color-orange-45: #ba4400;
+  --color-orange-60: #f26500;
+  --color-orange-95: #ffeed8;
+
+  /* ─── Purple ─── */
+  --color-purple-45: #8348d9;
+  --color-purple-95: #f5edff;
+
+  /* ─── Neutral ─── */
+  --color-neutral-10: #181c1f;
+  --color-neutral-15: #22272b;
+  --color-neutral-20: #2a3138;
+  --color-neutral-25: #333c45;
+  --color-neutral-45: #5e6b78;
+  --color-neutral-55: #768493;
+  --color-neutral-75: #afbac6;
+  --color-neutral-85: #cfd5dc;
+  --color-neutral-97: #f4f5f7;
+  --color-neutral-100: #ffffff;
+
+  /* ═══════════════════════════════════════════
+     Semantic Tokens
+     ═══════════════════════════════════════════ */
+
+  /* ─── Text ─── */
+  --color-text-default: var(--color-blue-15);
+  --color-text-subtle: var(--color-neutral-45);
+  --color-text-subtler: var(--color-neutral-75);
+  --color-text-inverse: var(--color-neutral-100);
+  --color-text-link: var(--color-blue-45);
+  --color-text-primary-stronger: var(--color-blue-45);
+  --color-text-primary-strong: var(--color-blue-60);
+  --color-text-secondary-strong: var(--color-red-60);
+
+  /* ─── Background ─── */
+  --color-bg-default: var(--color-neutral-100);
+  --color-bg-neutral: var(--color-neutral-97);
+  --color-bg-backdrop: var(--color-blue15alpha-20);
+  --color-bg-primary-stronger: var(--color-blue-45);
+  --color-bg-primary-strong: var(--color-blue-60);
+  --color-bg-primary-alternative: #4772b3;
+  --color-bg-secondary-stronger: var(--color-red-45);
+  --color-bg-secondary-strong: var(--color-red-60);
+  --color-bg-input-selected: var(--color-blue-15);
+
+  /* ─── Border ─── */
+  --color-border-default: var(--color-blue15alpha-10);
+  --color-border-focus: var(--color-blue-55);
+  --color-border-input-default: var(--color-blue15alpha-20);
+  --color-border-input-strong: var(--color-neutral-45);
+
+  /* ─── Input ─── */
+  --color-input-subtle: var(--color-neutral-100);
+  --color-input-dark: var(--color-neutral-97);
+
+  /* ═══════════════════════════════════════════
+     Spacing
+     ═══════════════════════════════════════════ */
+  --spacing-3xs: 4px;
+  --spacing-2xs: 8px;
+  --spacing-xs: 12px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+
+  /* ═══════════════════════════════════════════
+     Border Radius
+     ═══════════════════════════════════════════ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-round: 1000px;
+
+  /* ═══════════════════════════════════════════
+     Typography
+     ═══════════════════════════════════════════ */
+  --font-heading: "Murecho", sans-serif;
+  --font-body: "Noto Sans JP", sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-h3: 16px;
+  --text-h2: 20px;
+  --text-h1: 24px;
+
+  /* ─── Line Height ─── */
+  --leading-tight: 1.3;
+  --leading-normal: 1.4;
+  --leading-relaxed: 1.5;
+
+  /* ═══════════════════════════════════════════
+     Shadows
+     ═══════════════════════════════════════════ */
+  --shadow-sm: 0px 4px 8px 0px rgba(0, 0, 0, 0.1),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0px 2px 4px 1px rgba(0, 0, 0, 0.15),
+    0px 5px 12px 2px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 4px 16px 2px rgba(0, 0, 0, 0.2),
+    0px 8px 24px 4px rgba(0, 0, 0, 0.15), 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
