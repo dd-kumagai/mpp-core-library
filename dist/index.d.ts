@@ -1,15 +1,7 @@
-// Design tokens — extracted to dist/index.css by Vite lib build.
-// Consumers must import "@mpp/core/css" explicitly.
 import "./index.css";
-
-// Utilities
 export { cn } from "./lib/utils";
-
-// Icons
 export { Icon } from "./icons/index.ts";
 export type { IconName, IconProps } from "./icons/index.ts";
-
-// Components
 export { Button, buttonVariants } from "./components/Button.tsx";
 export type { ButtonProps } from "./components/Button.tsx";
 export { FloatingButton, floatingButtonVariants } from "./components/FloatingButton.tsx";
@@ -41,11 +33,4 @@ export type { PageTabProps, DataTabProps, MobileTabProps, MobileTabItem } from "
 export { Logotype, Logomark } from "./components/Logo.tsx";
 export type { LogotypeProps, LogomarkProps } from "./components/Logo.tsx";
 export { Table, Thead, Tbody, Tr, Th, Td } from "./components/Table.tsx";
-export type {
-  TableProps,
-  TheadProps,
-  TbodyProps,
-  TrProps,
-  ThProps,
-  TdProps,
-} from "./components/Table.tsx";
+export type { TableProps, TheadProps, TbodyProps, TrProps, ThProps, TdProps, } from "./components/Table.tsx";

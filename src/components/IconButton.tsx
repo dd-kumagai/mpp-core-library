@@ -7,8 +7,8 @@ const iconButtonVariants = cva(
   [
     "inline-flex items-center justify-center",
     "rounded-md",
-    "transition-opacity cursor-pointer",
-    "hover:opacity-70 active:opacity-60",
+    "transition-all duration-[var(--transition-default)] cursor-pointer",
+    "hover:bg-bg-hover",
     "disabled:opacity-40 disabled:cursor-not-allowed",
   ],
   {

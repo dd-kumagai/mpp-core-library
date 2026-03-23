@@ -10,8 +10,8 @@ const buttonVariants = cva(
   [
     "inline-flex items-center justify-center gap-3xs",
     "font-body font-bold",
-    "rounded-round overflow-clip",
-    "transition-opacity cursor-pointer",
+    "rounded-round overflow-clip relative",
+    "transition-all duration-[var(--transition-default)] cursor-pointer",
     "disabled:opacity-40 disabled:cursor-not-allowed",
   ],
   {
@@ -19,32 +19,30 @@ const buttonVariants = cva(
       variant: {
         filled: [
           "text-text-inverse",
-          "shadow-sm",
-          "hover:opacity-85 active:opacity-75",
+          "bg-[image:none] hover:bg-[image:linear-gradient(var(--color-bg-hover),var(--color-bg-hover))]",
         ],
         outline: [
-          "shadow-sm",
-          "hover:opacity-85 active:opacity-75",
+          "hover:bg-bg-hover",
         ],
         ghost: [
-          "hover:opacity-70 active:opacity-60",
+          "hover:bg-bg-hover",
         ],
       },
       size: {
-        lg: "px-[20px] py-xs text-lg leading-relaxed",
-        sm: "px-[20px] py-2xs text-base leading-normal",
+        lg: "px-[20px] py-xs text-lg leading-relaxed shadow-md",
+        sm: "px-[20px] py-2xs text-base leading-normal shadow-sm",
       },
     },
     compoundVariants: [
       /* ── Large ── */
       { variant: "filled", size: "lg", className: "bg-bg-primary-stronger" },
       { variant: "outline", size: "lg", className: "bg-bg-default border-2 border-text-primary-stronger text-text-default" },
-      { variant: "ghost", size: "lg", className: "text-text-primary-stronger" },
+      { variant: "ghost", size: "lg", className: "text-text-primary-stronger shadow-none" },
 
       /* ── Small ── */
       { variant: "filled", size: "sm", className: "bg-bg-primary-alternative" },
       { variant: "outline", size: "sm", className: "border border-border-input-default text-text-default" },
-      { variant: "ghost", size: "sm", className: "text-text-default" },
+      { variant: "ghost", size: "sm", className: "text-text-default shadow-none" },
     ],
     defaultVariants: {
       variant: "filled",

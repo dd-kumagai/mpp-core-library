@@ -18,6 +18,7 @@ export default defineConfig({
       formats: ['es'],
       fileName: 'index'
     },
+    assetsInlineLimit: 100000,
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {

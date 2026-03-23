@@ -10,9 +10,9 @@ const floatingButtonVariants = cva(
     "inline-flex items-center justify-center gap-3xs",
     "font-body font-bold text-lg leading-relaxed text-text-inverse",
     "rounded-round overflow-clip",
-    "shadow-md",
-    "transition-opacity cursor-pointer",
-    "hover:opacity-85 active:opacity-75",
+    "shadow-lg",
+    "transition-all duration-[var(--transition-default)] cursor-pointer",
+    "bg-[image:none] hover:bg-[image:linear-gradient(var(--color-bg-hover),var(--color-bg-hover))]",
     "disabled:opacity-40 disabled:cursor-not-allowed",
   ],
   {
